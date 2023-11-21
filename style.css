@@ -1,0 +1,116 @@
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,400&family=Darker+Grotesque:wght@900&family=Montserrat&display=swap');
+body,
+html {
+    margin: 0;
+    height: 100%;
+    background-color: black;
+font-family: Darker Grotesque;
+}
+
+header {
+    /* header { */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed ;
+        top: 0;
+        padding: 30px;
+        /* width:100%; */
+        left: 0;
+        right: 0;
+        border: 1px solid;
+        border-radius: 5px;
+        height: 20px;
+        background-color: rgba(0,0,0,0.507);
+        backdrop-filter: blur(8px);
+    /* } */
+    /* display: flex;
+    position: fixed ;
+    width:100%;
+    border: 1px solid;
+    border-radius: 5px;
+    height: 40px;
+    backdrop-filter: blur(8px);
+    background-color: rgba(0, 0, 0, 0.507); */
+}
+.b{
+    font-size: 35px;
+    color: white;
+  }
+.svg{
+    display: flex;
+    flex-direction: flex-end;
+    color: black;
+}
+.subMain{
+    color: white;
+    margin-left: 100px;
+    align-items: center;
+}
+.character{
+color: white;
+font-size: 32px;
+}
+.other{
+
+}
+.grid-container {
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    gap: 20px 20px;
+    padding: 10px;
+    /* display: flex; */
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto;
+}
+
+.grid-item {
+    display: flex;
+    height: 110px;
+    text-transform: uppercase;
+    background-color: white;
+    font-size: 48px;
+    border: none;
+    justify-content: center;
+    align-items: center;
+transform: ;
+}
+.grid-item:hover{
+    background-color:black ;
+    cursor: pointer;
+    transition:width 2s height 4s;
+    color: white;
+    border: 1px solid white;
+
+}
+
+@media screen and (min-width:768px) {
+    .grid-container{
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+   .grid-container{
+    grid-template-columns: repeat(5,1fr) ;
+
+   }
+}
+@media only screen and (min-width:2560px) {
+    .grid-container{
+        grid-template-columns: repeat(6,1fr);
+    }
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto;
+    border: 1px solid;
+    height: 70px;
+    background-color:white;
+}
